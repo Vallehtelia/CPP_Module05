@@ -6,7 +6,7 @@
 /*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:38:01 by vvaalant          #+#    #+#             */
-/*   Updated: 2024/11/09 23:07:28 by vvaalant         ###   ########.fr       */
+/*   Updated: 2024/11/09 23:39:30 by vvaalant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 #define BUREAUCRAT_HPP
 
 #include <iostream>
-#include "Form.hpp"
+#include "AForm.hpp"
 
 #define GREEN "\033[32m"
+#define CYAN "\033[36m"
+#define RED "\033[31m"
 #define DEFAULT "\033[0m"
 
 class Bureaucrat
@@ -34,7 +36,8 @@ class Bureaucrat
 		int getGrade() const;
 		void incrementGrade();
 		void decrementGrade();
-		void signForm(Form &formToSign);
+		void signForm(AForm &formToSign);
+		void executeForm(AForm const &formToExecute);
 
 		class GradeTooHighException : public std::exception
 		{
