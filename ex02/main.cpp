@@ -90,6 +90,8 @@ int	main()
 			b3.executeForm(f2);
 			b3.executeForm(f3);
 
+			std::cout << CYAN << b4 << "tries to execute forms" << DEFAULT << std::endl;
+
 			b4.executeForm(f1);
 			b4.executeForm(f2);
 			b4.executeForm(f3);

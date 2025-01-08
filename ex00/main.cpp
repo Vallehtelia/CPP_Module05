@@ -65,6 +65,8 @@ int	main()
 		{
 			Bureaucrat lawyer3("Burre3", 75);
 			std::cout << lawyer3 << std::endl;
+			lawyer3.decrementGrade();
+			std::cout << lawyer3 << std::endl;
 		}
 		catch (const std::exception &e)
 		{

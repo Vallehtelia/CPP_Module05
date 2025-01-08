@@ -16,7 +16,6 @@
 #include <iostream>
 
 class Bureaucrat;
- // this shold be abstract class
 class AForm
 {
 	private:
