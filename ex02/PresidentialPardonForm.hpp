@@ -6,7 +6,7 @@
 /*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 22:30:41 by vvaalant          #+#    #+#             */
-/*   Updated: 2024/11/09 22:38:10 by vvaalant         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:17:33 by vvaalant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ class PresidentialPardonForm : public AForm
 {
 	private:
 		std::string const target;
+
+		PresidentialPardonForm();
 	public:
 		PresidentialPardonForm(std::string target);
 		PresidentialPardonForm(PresidentialPardonForm const &other);

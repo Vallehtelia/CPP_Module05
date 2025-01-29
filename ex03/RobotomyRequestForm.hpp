@@ -6,7 +6,7 @@
 /*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 22:30:51 by vvaalant          #+#    #+#             */
-/*   Updated: 2024/11/09 22:38:04 by vvaalant         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:19:23 by vvaalant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ class RobotomyRequestForm : public AForm
 {
 	private:
 		std::string const target;
+
+		RobotomyRequestForm();
 	public:
 		RobotomyRequestForm(std::string target);
 		RobotomyRequestForm(RobotomyRequestForm const &other);

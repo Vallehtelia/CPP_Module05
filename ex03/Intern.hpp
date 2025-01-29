@@ -6,7 +6,7 @@
 /*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 23:48:35 by vvaalant          #+#    #+#             */
-/*   Updated: 2024/11/09 23:59:15 by vvaalant         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:19:10 by vvaalant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@
 class Intern
 {
 	private:
-		AForm * createShrubberyCreationForm(std::string const & target);
-		AForm * createRobotomyRequestForm(std::string const & target);
-		AForm * createPresidentialPardonForm(std::string const & target);
-		AForm * (Intern::*_formCreators[3])(std::string const & target);
+		AForm *createShrubberyCreationForm(std::string const & target);
+		AForm *createRobotomyRequestForm(std::string const & target);
+		AForm *createPresidentialPardonForm(std::string const & target);
+		AForm *(Intern::*_formCreators[3])(std::string const & target);
 		std::string _formNames[3];
 	public:
 		Intern();

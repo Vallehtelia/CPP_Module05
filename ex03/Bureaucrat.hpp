@@ -6,7 +6,7 @@
 /*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:38:01 by vvaalant          #+#    #+#             */
-/*   Updated: 2024/11/09 23:39:30 by vvaalant         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:18:26 by vvaalant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ class Bureaucrat
 	private:
 		std::string const name;
 		int 		grade;
+
+		Bureaucrat();
 	public:
 		Bureaucrat(std::string const name, int grade);
 		Bureaucrat(Bureaucrat const &bureaucrat);

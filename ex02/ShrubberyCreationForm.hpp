@@ -6,7 +6,7 @@
 /*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 22:30:57 by vvaalant          #+#    #+#             */
-/*   Updated: 2024/11/09 22:37:34 by vvaalant         ###   ########.fr       */
+/*   Updated: 2025/01/29 14:14:36 by vvaalant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ class ShrubberyCreationForm : public AForm
 {
 	private:
 		std::string const target;
+
+		ShrubberyCreationForm();
 	public:
 		ShrubberyCreationForm(std::string target);
 		ShrubberyCreationForm(ShrubberyCreationForm const &other);
